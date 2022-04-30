@@ -19,4 +19,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Deploy To Server
-      run: curl -H POST https://npex42.dev/git/push.php
+      run: curl -X POST https://npex42.dev/git/push.php
