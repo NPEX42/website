@@ -1,6 +1,7 @@
 body {
     background-color: darkgray;
-    
+    height: 100%;
+    width: 100%;    
 }
 
 h1 {
