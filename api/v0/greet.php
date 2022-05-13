@@ -1,12 +1,12 @@
-#<?php
+<?php
 	include "db.php";
 	function DisplayUsers($conn) {
 		$rows = Rows($conn, "SELECT * FROM Users");
-		echo "<ul>";
-		foreach ($rows as $row) {
-			echo "<li>" . $row["ID"] . " - " . $row["USERNAME"] . "</li>";
-		}
-		echo "</ul>";
+		$response = array();
+		$response['user-count'] = count($rows);
+		$response['users'] = $rows;
+		header('Content-type: application/json');
+		echo json_encode($response);
 	}
 
 	function UpdateUser($conn) {

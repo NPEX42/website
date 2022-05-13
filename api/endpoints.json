@@ -1,0 +1,15 @@
+{
+    "uri": "https://npex42.dev/endpoints.json",
+    "endpoints_count": 2,
+    "endpoints": [
+        {
+            "name": "Landing Page",
+            "uri": "https://npex42.dev/"
+        },
+	{
+            "name": "Users",
+            "uri": "https://npex42.dev/api/v0/greet.php"
+        }
+    ]
+
+}

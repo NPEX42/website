@@ -1,4 +1,4 @@
-s#<?php
+<?php
 	function ConnectToServer($host = "localhost", $user = "george", $pwd = "Magnus123890", $db = "TestDB") {
 		$connection = new mysqli($host, $user, $pwd, $db) or die("Connection Failed: %s\n".$conn->error);
 		return $connection;
